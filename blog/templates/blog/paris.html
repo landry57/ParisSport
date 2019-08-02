@@ -1,0 +1,80 @@
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
+  </head>
+  <body  style="background-image:url({% static 'img/pelouse.jpg'%});height:100% ;">
+    <div class="container">
+      <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Tente ta chance</h5>
+        <p class="card-text">Paris sportifs offerts sur le foot, tennis, rugby et basket avec les meilleurs sites de paris sportif en ligne. Obtenez les plus gros bonus de bienvenue pour vos paris ...</p>
+        <a class="card-link">football</a>
+        <a class="card-link"></a>
+      </div>
+    </div>
+    </div>
+
+
+  <div class="pt-30">
+
+    <div class="table-responsive text-nowrap">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Equipe</th>
+            <th scope="col">drapeau</th>
+            <th scope="col" class="btn btn-danger">Cote</th>
+            <th scope="col">VS</th>
+            <th scope="col" class="btn btn-danger">Cote</th>
+            <th scope="col">Equipe</th>
+            <th scope="col">drapeau</th>
+            <th scope="col">Mise</th>
+            <th scope="col">Parier</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <form class="" action="{% url 'blog:paris'%}" method="POST">
+            {% csrf_token %}
+            <tr>
+              <td>PSG</td>
+              <td style="">  <img src="{% static 'img/psg.jpeg'  %}" alt="" width="35" class="img im-circle"> </td>
+              <td style="color:#FFF">3.4</td>
+              <td></td>
+              <td style="color:#FFF">2.6</td>
+              <td>Liverpol</td>
+              <td> <img src="{% static 'img/liverpol.png'  %}" alt="" width="35" class="img im-circle"> </td>
+              <td>500</td>
+              <td><button type="submit" class="btn btn-warning img img-circle">parier</button></td>
+            </tr>
+          </form>
+
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"></script>
+  </body>
+</html>
